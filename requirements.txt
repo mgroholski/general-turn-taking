@@ -1,0 +1,103 @@
+aiohappyeyeballs==2.6.1
+aiohttp==3.13.2
+aiosignal==1.4.0
+annotated-types==0.7.0
+antlr4-python3-runtime==4.9.3
+anyio==4.11.0
+attrs==25.4.0
+cachetools==6.2.2
+certifi==2025.11.12
+charset-normalizer==3.4.4
+click==8.3.0
+contourpy==1.3.3
+cycler==0.12.1
+datasets==4.4.1
+# Editable install with no version control (datasets_turntaking==0.0.0)
+-e /scratch/mgrohols/general-turn-taking/TurnGPT/datasets_turntaking
+dill==0.4.0
+einops==0.8.1
+filelock @ file:///home/conda/feedstock_root/build_artifacts/filelock_1759948064277/work
+fonttools==4.60.1
+frozenlist==1.8.0
+fsspec @ file:///home/conda/feedstock_root/build_artifacts/fsspec_1761840104528/work
+gitdb==4.0.12
+GitPython==3.1.45
+gmpy2 @ file:///home/conda/feedstock_root/build_artifacts/gmpy2_1762946762401/work
+google-api-core==2.28.1
+google-auth==2.43.0
+google-cloud-speech==2.34.0
+googleapis-common-protos==1.72.0
+grpcio==1.76.0
+grpcio-status==1.76.0
+h11==0.16.0
+hf-xet==1.2.0
+httpcore==1.0.9
+httpx==0.28.1
+huggingface-hub==0.36.0
+hydra-core==1.3.2
+idna==3.11
+iniconfig==2.3.0
+Jinja2 @ file:///home/conda/feedstock_root/build_artifacts/jinja2_1741263328855/work
+kiwisolver==1.4.9
+lightning-utilities==0.15.2
+MarkupSafe @ file:///home/conda/feedstock_root/build_artifacts/markupsafe_1759055168201/work
+matplotlib==3.10.7
+mpmath @ file:///home/conda/feedstock_root/build_artifacts/mpmath_1733302684489/work
+multidict==6.7.0
+multiprocess==0.70.18
+networkx @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_networkx_1749078300/work
+numpy @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_numpy_1761162144/work/dist/numpy-2.3.4-cp313-cp313-linux_x86_64.whl#sha256=dfcdfa1f925fd0e49eb2190260d1a0ac23d19e33902f428adf62fb3e57d5f143
+omegaconf==2.3.0
+optree @ file:///home/conda/feedstock_root/build_artifacts/optree_1763124277233/work
+packaging==25.0
+pandas==2.3.3
+pillow @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_pillow_1761655794/work
+platformdirs==4.5.0
+pluggy==1.6.0
+praat-parselmouth==0.4.6
+propcache==0.4.1
+proto-plus==1.26.1
+protobuf==6.33.1
+pyarrow==22.0.0
+pyasn1==0.6.1
+pyasn1_modules==0.4.2
+pybind11 @ file:///D:/bld/pybind11-split_1747934313674/work
+pybind11_global @ file:///home/conda/feedstock_root/build_artifacts/pybind11-split_1747934270866/work
+pydantic==2.12.4
+pydantic_core==2.41.5
+Pygments==2.19.2
+pyparsing==3.2.5
+pytest==9.0.1
+python-dateutil==2.9.0.post0
+pytorch-lightning==2.5.6
+pytz==2025.2
+PyYAML==6.0.3
+regex==2025.11.3
+requests==2.32.5
+rsa==4.9.1
+safetensors==0.6.2
+sentry-sdk==2.44.0
+setuptools==80.9.0
+six==1.17.0
+smmap==5.0.2
+sniffio==1.3.1
+sphfile==1.0.3
+sympy @ file:///home/conda/feedstock_root/build_artifacts/sympy_1745946051654/work
+tokenizers==0.22.1
+torch @ file:///home/conda/feedstock_root/build_artifacts/libtorch_1762089971981/work
+torchaudio @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_torchaudio_1762048162/work
+torchcodec @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_torchcodec_1762022760/work
+torchmetrics==1.8.2
+torchvision @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_torchvision_1762096619/work
+torchvision-extra-decoders @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_torchvision-extra-decoders_1759392536/work
+tqdm==4.67.1
+transformers==4.57.1
+turngpt @ git+https://github.com/ErikEkstedt/TurnGPT.git@64f7d8c3b00e2a8332bca9267e6252462cbd0407
+typing-inspection==0.4.2
+typing_extensions @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_typing_extensions_1756220668/work
+tzdata==2025.2
+urllib3==2.5.0
+vap @ git+https://github.com/ErikEkstedt/VoiceActivityProjection.git@f39a78b23a6dccdbedd106e00b48c410b8739f5d
+wandb==0.23.0
+xxhash==3.6.0
+yarl==1.22.0
