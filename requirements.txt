@@ -12,8 +12,6 @@ click==8.3.0
 contourpy==1.3.3
 cycler==0.12.1
 datasets==4.4.1
-# Editable install with no version control (datasets_turntaking==0.0.0)
--e /scratch/mgrohols/general-turn-taking/TurnGPT/datasets_turntaking
 dill==0.4.0
 einops==0.8.1
 filelock @ file:///home/conda/feedstock_root/build_artifacts/filelock_1759948064277/work
