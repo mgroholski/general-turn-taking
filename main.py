@@ -1,10 +1,19 @@
 import argparse
 import time
+from datetime import datetime
 
-from vap.model import VapGPT
+from turngpt import TurnGPT
+from vap.model import (
+    VapGPT,  # https://github.com/ErikEkstedt/VoiceActivityProjection/blob/main/vap/model.py#L125
+)
 
 from general.asr import ASR
 from general.consts import *
+from general.dialogState import DialogState
+
+
+def format_time(current_time):
+    return datetime.fromtimestamp(current_time).strftime("%H:%M:%S.%f")[:-3]
 
 
 def main(inp):
@@ -17,21 +26,37 @@ def main(inp):
     last_sent_asr_result = None
     turngpt_output = 0
 
-    ASR = ASR(audio_filepath)
-    VAP = VapGPT()
+    asr = ASR(audio_filepath)
+    vap = VapGPT()
+    turngpt = TurnGPT()
 
+    """
+    dialog_manager will take the place of DialogState object within the PsuedoCode. We need the following functions:
+        1. updateUser
+        2. getHistory
+
+    Furthermore, we need to check how TurnGPT would take this in (DialogState.getHistory()).
+    """
+    dialog_state = DialogState()
+
+    print("Beginning to listen...")
     while True:
         current_time = time.time()
-        # vap_output = VAP.get_current()
-        #
+
         # Check if the ASR has updated it output
-        if ASR.has_new_result():
-            #   asr_result = ASR.get_result()
-            #   DialogState.updateUser(asr_result)
+        if asr.has_new_result():
+            asr_result = asr.get_result()
+            # What is the DialogState class?
+            # We let the dialog state be dialog_manager
+            # DialogState.updateUser(asr_result)
             #   turngpt_output = TurnGPT.eval(DialogState.getHistory())
             #   last_asr_time = current_time
             #   last_asr_time = current_time
-            print(ASR.get_new_result())
+
+        # What does the get_current method do?
+        # vap_output = vap.get_current()
+
+        time.sleep(1)
 
 
 if __name__ == "__main__":
@@ -39,7 +64,6 @@ if __name__ == "__main__":
     parser.add_argument(
         "filepath",
         help="The path of the file where the audio is being appended.",
-        required=True,
     )
     args = parser.parse_args()
     main(args)
